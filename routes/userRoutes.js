@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const userController = require('../controllers/userController');
+const userAuth = require("../middlewares/userAuth");
+router.get("/" , userController.index);
+router.post("/register" , userController.create);
+router.post("/login" , userController.login);
+router.use(userAuth);
+router.get("/profile" , userController.profile);
+module.exports = router;

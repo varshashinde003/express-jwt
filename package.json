@@ -1,0 +1,42 @@
+{
+  "name": "express-jwt-auth",
+  "version": "1.0.0",
+  "description": "Express Js project with JWT authentication.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js",
+    "postinstall": "node utils/postInstall",
+    "key:generate": "node utils/keygen",
+    "start-client": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "express js",
+    "node js",
+    "JWT",
+    "authentication"
+  ],
+  "author": {
+    "name": "Varsha Shinde",
+    "email": "varshashinde003@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.4.19",
+    "node-input-validator": "^3.1.0",
+    "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "ora": "^3.2.0"
+  }
+}
